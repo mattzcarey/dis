@@ -1,0 +1,21 @@
+## Zig
+.zig-cache/
+zig-cache/
+zig-out/
+*.o
+*.obj
+
+## TypeScript / Node
+node_modules/
+dist/
+*.tsbuildinfo
+
+## OS / editors
+.DS_Store
+.env
+.env.local
+
+## dis data
+/data/
+/var/
+/test-models/

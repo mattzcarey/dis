@@ -1,0 +1,18 @@
+{
+  "bind": "127.0.0.1:7070",
+  "data_dir": "./data",
+  "idle_ms": 300000,
+  "checkpoint_ms": 60000,
+  "default_max_tokens": 2048,
+  "state_save_interval_ms": 1000,
+  "max_state_bytes": 1048576,
+
+  "model": {
+    "id": "none",
+    "source": "none",
+    "seq_capacity": 8192,
+    "max_live_sessions": 64
+  },
+
+  "bootstrap_actor": "echo"
+}

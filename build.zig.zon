@@ -1,0 +1,26 @@
+.{
+    .name = .dis,
+    .version = "0.0.0",
+    .fingerprint = 0xcdac4a86400cb058, // dis (top-level)
+    .minimum_zig_version = "0.16.0",
+
+    // Single-package monorepo — `common/`, `engine/`, and `infer/` are
+    // all built from this one build.zig. llama.cpp lands here as a
+    // URL-pinned dep when `-Dwith_llama=true` goes live in M2:
+    //
+    //   .dependencies = .{
+    //       .llama_cpp = .{
+    //           .url  = "https://github.com/ggml-org/llama.cpp/archive/refs/tags/<TAG>.tar.gz",
+    //           .hash = "<sha256>",
+    //       },
+    //   },
+    .dependencies = .{},
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "common",
+        "engine",
+        "infer",
+    },
+}
